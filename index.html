@@ -45,21 +45,26 @@
       line-height: 1.5;
     }
 
-    button {
-      margin-top: 25px;
-      padding: 12px 28px;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      background-color: #ffffff33;
+    .logo-button {
+      margin-top: 35px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #ffffff22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
       color: #fff;
+      border: 2px solid #ffffff44;
       cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      transition: all 0.3s ease;
     }
 
-    button:hover {
+    .logo-button:hover {
       background-color: #ffffff55;
-      transform: scale(1.05);
+      transform: rotate(10deg) scale(1.05);
     }
 
     footer {
@@ -70,7 +75,8 @@
     }
   </style>
   <script>
-    function refreshPage() {
+    function logoClick() {
+      // Replace this with a link or action later if needed
       location.reload();
     }
   </script>
@@ -86,7 +92,7 @@
     <p>Creative Developer, building beautiful apps with Flutterflow and web tech.</p>
     <p>Part of the mission at <strong>3dvr.tech</strong> to create open-source, empowering solutions for the world.</p>
 
-    <button onclick="refreshPage()">Refresh Page</button>
+    <div class="logo-button" onclick="logoClick()">BA</div>
   </div>
 
   <footer>
