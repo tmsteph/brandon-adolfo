@@ -57,6 +57,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       letter-spacing: 1px;
+      text-decoration: none;
     }
 
     .name-logo:hover {
@@ -71,13 +72,6 @@
       box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     }
   </style>
-  <script>
-    function logoClick() {
-      // You can change this to a different link later, like:
-      // window.location.href = "/portfolio.html";
-      location.reload();
-    }
-  </script>
 </head>
 <body>
 
@@ -90,7 +84,9 @@
     <p>Creative Developer, building beautiful apps with Flutterflow and web tech.</p>
     <p>Part of the mission at <strong>3dvr.tech</strong> to create open-source, empowering solutions for the world.</p>
 
-    <div class="name-logo" onclick="logoClick()">Brandon Adolfo</div>
+    <a class="name-logo" href="https://3dvr.tech" target="_blank" rel="noopener noreferrer">
+      Brandon Adolfo
+    </a>
   </div>
 
   <footer>
