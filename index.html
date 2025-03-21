@@ -22,6 +22,7 @@
       font-size: 28px;
       font-weight: bold;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
     }
 
     .container {
@@ -45,8 +46,19 @@
       line-height: 1.5;
     }
 
-    .name-logo {
-      margin-top: 40px;
+    .container a {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+
+    .container a:hover {
+      color: #ffd700;
+    }
+
+    .logo-button {
+      margin-top: 35px;
       padding: 14px 32px;
       background-color: #ffffff22;
       border: 2px solid #ffffff44;
@@ -60,7 +72,7 @@
       text-decoration: none;
     }
 
-    .name-logo:hover {
+    .logo-button:hover {
       background-color: #ffffff55;
       transform: scale(1.05);
     }
@@ -72,21 +84,24 @@
       box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     }
   </style>
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+  </script>
 </head>
 <body>
 
-  <header>
+  <header onclick="refreshPage()">
     Brandon Adolfo
   </header>
 
   <div class="container">
     <h2>Hello, I'm Brandon Adolfo!</h2>
     <p>Creative Developer, building beautiful apps with Flutterflow and web tech.</p>
-    <p>Part of the mission at <strong>3dvr.tech</strong> to create open-source, empowering solutions for the world.</p>
+    <p>Part of the mission at <a href="https://3dvr.tech" target="_blank" rel="noopener noreferrer">3dvr.tech</a> to create open-source, empowering solutions for the world.</p>
 
-    <a class="name-logo" href="https://3dvr.tech" target="_blank" rel="noopener noreferrer">
-      Brandon Adolfo
-    </a>
+    <div class="logo-button" onclick="refreshPage()">Brandon Adolfo</div>
   </div>
 
   <footer>
