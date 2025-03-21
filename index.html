@@ -8,61 +8,65 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f4f4f4;
-      min-height: 100vh;
+      background: linear-gradient(160deg, #2b5876, #4e4376);
+      color: #ffffff;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #1c1c1c;
       padding: 20px;
       font-size: 28px;
       font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.08);
-      margin: auto;
-      padding: 30px;
-      max-width: 800px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(8px);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
     }
 
-    h2 {
+    .container h2 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
 
-    p {
+    .container p {
       font-size: 18px;
-      line-height: 1.6;
+      max-width: 600px;
+      margin: 10px 0;
+      line-height: 1.5;
     }
 
     button {
-      margin-top: 20px;
-      padding: 12px 24px;
+      margin-top: 25px;
+      padding: 12px 28px;
       font-size: 16px;
       border: none;
-      border-radius: 8px;
-      background-color: #ffffff22;
+      border-radius: 6px;
+      background-color: #ffffff33;
       color: #fff;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     button:hover {
-      background-color: #ffffff44;
+      background-color: #ffffff55;
+      transform: scale(1.05);
     }
 
     footer {
-      margin-top: auto;
       padding: 15px;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: #1c1c1c;
       font-size: 14px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     }
   </style>
   <script>
@@ -79,8 +83,8 @@
 
   <div class="container">
     <h2>Hello, I'm Brandon Adolfo!</h2>
-    <p>Developer. Visionary. Team 3dvr.tech.</p>
-    <p>I build modern cross-platform apps with Flutterflow and web tech.</p>
+    <p>Creative Developer, building beautiful apps with Flutterflow and web tech.</p>
+    <p>Part of the mission at <strong>3dvr.tech</strong> to create open-source, empowering solutions for the world.</p>
 
     <button onclick="refreshPage()">Refresh Page</button>
   </div>
