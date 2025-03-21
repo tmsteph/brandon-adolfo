@@ -45,26 +45,23 @@
       line-height: 1.5;
     }
 
-    .logo-button {
-      margin-top: 35px;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
+    .name-logo {
+      margin-top: 40px;
+      padding: 14px 32px;
       background-color: #ffffff22;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
+      border: 2px solid #ffffff44;
+      border-radius: 50px;
+      font-size: 20px;
       font-weight: bold;
       color: #fff;
-      border: 2px solid #ffffff44;
       cursor: pointer;
       transition: all 0.3s ease;
+      letter-spacing: 1px;
     }
 
-    .logo-button:hover {
+    .name-logo:hover {
       background-color: #ffffff55;
-      transform: rotate(10deg) scale(1.05);
+      transform: scale(1.05);
     }
 
     footer {
@@ -76,7 +73,8 @@
   </style>
   <script>
     function logoClick() {
-      // Replace this with a link or action later if needed
+      // You can change this to a different link later, like:
+      // window.location.href = "/portfolio.html";
       location.reload();
     }
   </script>
@@ -92,7 +90,7 @@
     <p>Creative Developer, building beautiful apps with Flutterflow and web tech.</p>
     <p>Part of the mission at <strong>3dvr.tech</strong> to create open-source, empowering solutions for the world.</p>
 
-    <div class="logo-button" onclick="logoClick()">BA</div>
+    <div class="name-logo" onclick="logoClick()">Brandon Adolfo</div>
   </div>
 
   <footer>
