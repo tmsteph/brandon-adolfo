@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Adolfo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        .container {
-            margin: 50px auto;
-            max-width: 800px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #555;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            color: white;
-        }
-    </style>
-    <script>
-        function refreshPage() {
-            location.reload();
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brandon Adolfo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      margin: auto;
+      padding: 30px;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffff22;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffffff44;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+  </script>
 </head>
 <body>
 
-    <header>
-        Welcome to Brandon Adolfo's Website
-    </header>
+  <header>
+    Brandon Adolfo
+  </header>
 
-    <div class="container">
-        <h2>Hello, I'm Brandon Adolfo!</h2>
-        <p>I'm a developer and creative thinker passionate about technology and innovation.</p>
-        <p>Currently working with Flutterflow and part of the 3dvr.tech team.</p>
+  <div class="container">
+    <h2>Hello, I'm Brandon Adolfo!</h2>
+    <p>Developer. Visionary. Team 3dvr.tech.</p>
+    <p>I build modern cross-platform apps with Flutterflow and web tech.</p>
 
-        <button onclick="refreshPage()">Refresh Page</button>
-    </div>
+    <button onclick="refreshPage()">Refresh Page</button>
+  </div>
 
-    <footer>
-        &copy; 2025 Brandon Adolfo. All rights reserved.
-    </footer>
+  <footer>
+    &copy; 2025 Brandon Adolfo. All rights reserved.
+  </footer>
 
 </body>
 </html>
